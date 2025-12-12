@@ -73,12 +73,12 @@ h1 {
 }
 
 #navbar {
-    padding: 6px;
+    padding: 3px;   
 }
 
 #logo {
-    width: 25px;
-    height: 30px;
+    width: 32px;
+    height: 32px;
 }
 
 #about {
@@ -175,18 +175,18 @@ textarea {
 }
 
 .form-group textarea {
-    font-family:'Roboto',sans-serif;
-    width:80%;
+    font-family: 'Roboto', sans-serif;
+    width: 80%;
 }
 
-.form-group input[type="checkbox"]{ 
-    height:18px;
-    width:18px;
+.form-group input[type="checkbox"] {
+    height: 18px;
+    width: 18px;
 }
 
-.form-group input[type="submit"]{
-    background-color:oklch(70.7% 0.165 254.624);
-    color:white;
-    font-weight:500;
-    cursor:pointer;
+.form-group input[type="submit"] {
+    background-color: oklch(70.7% 0.165 254.624);
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
 }
