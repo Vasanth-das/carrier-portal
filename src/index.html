@@ -26,7 +26,8 @@
 
 <body>
     <div id="navbar">
-        <img id="logo" alt="Cap image" src="fnavbar.png">
+        <img id="logo" height="30px" alt="logo" src="favicon3.png">
+        <img id="logo-with-text" height="30px" alt="logo with the text" src="fnavbar.png">
     </div>
     <img id="banner" src="banner.jpg" alt="it is just a ref image" height="240" width="250">
     <h1>About</h1>
@@ -50,98 +51,129 @@
         </div>
 
         </p>
-        <div id="Team"> <img id="grp" src="team.jpg" alt="also a ref"><br><br></div>
+        <div id="Team"> <img id="team-image" src="team.jpg" alt="also a ref"><br><br></div>
 
     </div>
-
+    <!-- This is for an mobile devices -->
     <h2>Job Opportunities</h2>
     <div id="jobs">
-        <table id="jobs-table">
-            <tr class="jobs-header-row">
-                <th rowspan="2">Job Title</th>
-                <th style="text-align:center" colspan="2">Location</th>
-                <th rowspan="2">Salary</th>
-                <th rowspan="2">Posted On</th>
-            </tr>
-            <tr class="jobs-header-row">
-                <th>City</th>
-                <th>Country</th>
-            </tr>
-            <tr class="jobs-data-row">
-                <td>FrontEnd</td>
-                <td>Bengaluru</td>
-                <td>India</td>
-                <td>₹1,20,000</td>
-                <td>23 March 2025</td>
-            </tr>
-            <tr class="jobs-data-row">
-                <td>BackEnd</td>
-                <td>Mumbai</td>
-                <td>India</td>
-                <td>₹1,50,000</td>
-                <td>23 April 2025</td>
-            </tr>
-            <tr class="jobs-data-row">
-                <td>FullStack</td>
-                <td>San fransico</td>
-                <td>USA</td>
-                <td>$60,000</td>
-                <td>23 June 2025</td>
-            </tr>
-            <tr class="jobs-data-row">
-                <td>DataScientist</td>
-                <td style="text-align:center" colspan="2">Remote</td>
-                <td>$80,000</td>
-                <td>23 May 2025</td>
-            </tr>
-        </table>
-
-        <div id="application">
-            <h2>Submit Your Application</h2>
-            <form class="form-group" action="https://formbold.com/s/6lEXN" method="POST" enctype="multipart/form-data">
-                <div class="form-group"><label for="name">Full Name</label><br>
-                    <input type="text" name="Full Name" id="name" placeholder="Atsu" required><br>
-                </div>
-                <div class="form-group"> <label for="email">Email ID</label><br>
-                    <input type="email" id="email" email="Email ID" placeholder="example@gmail.com" required><br>
-                </div>
-                <div class="form-group"><label for="phone">Phone No</label><br>
-                    <input type="tel" id="phone" name="phone" placeholder="+91 639-809-0000" required><br>
-                </div>
-                <div class="form-group"><label for="dob">Date-of-Birth</label><br>
-                    <input type="date" id="dob" name="dob" placeholder="Date-of-Birth" required><br>
-                </div>
-                <div class="form-group"><label for="position Applied">Position Applied For</label><br>
-                    <select id="position" name="Position Applied" required>
-                        <option value="">Select Position</option>
-                        <option value="frontend developer">FrontEnd Developer</option>
-                        <option value="backend developer">BackEnd Developer</option>
-                        <option value="fullstack developer">Fullstack Developer</option>
-                        <option value="data scientist">Data Scientist</option>
-                    </select><br>
-                    <div class="form-group"><label for="resume">Upload Resume</label><br>
-                        <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required><br>
-                    </div>
-                    <div class="form-group"><label for="coverletter">Cover letter</label><br>
-                        <textarea id="coverletter" id="coverletter" name="coverletter" rows="5" required
-                            placeholder="Explain how do you fit for the job"></textarea><br>
-                    </div>
-                    <div class="form-group"><label for="terms"><input type="checkbox" id="terms" name="checkbox">Accept
-                            the terms & conditions </label></div>
-                    <div class="form-group">
-                        <input type="submit" value="Submit">
-                    </div><br>
-            </form>
+        <div id="jobs-list">
+            <div class="job">
+                <div class="jobs-title">Frontend Developer</div>
+                <div class="jobs-detail">Bengaluru,India</div>
+                <div class="jobs-detail">₹12,00,000</div>
+                <div class="jobs-detail">Posted March 3,2023</div>
+            </div>
+            <div class="job">
+                <div class="jobs-title">backend Developer</div>
+                <div class="jobs-detail">Mumbai,India</div>
+                <div class="jobs-detail">₹15,00,000</div>
+                <div class="jobs-detail">Posted Feb 1,2023</div>
+            </div>
+            <div class="job">
+                <div class="jobs-title">Full Stack Developer</div>
+                <div class="jobs-detail">San fransico,USA</div>
+                <div class="jobs-detail">$60,000</div>
+                <div class="jobs-detail">Posted May 5,2023</div>
+            </div>
+            <div class="job">
+                <div class="jobs-title">Data Scientist</div>
+                <div class="jobs-detail">Remote</div>
+                <div class="jobs-detail">$80,000</div>
+                <div class="jobs-detail">Posted April 7,2023</div>
+            </div>
         </div>
+    </div>
 
-        <div class="footer">
-            <ul id="footer-links">
-                <li>Courses</li>
-                <li>Programs</li>
-                <li>Youtube</li>
-            </ul>
-            <span id="copy-right">©&nbsp;&nbsp;2025&nbsp;&nbsp;Atsu</span>
-        </div>
+
+
+    <!-- This could be used on the desktop or big monitor devices -->
+    <table id="jobs-table">
+        <tr class="jobs-header-row">
+            <th rowspan="2">Job Title</th>
+            <th style="text-align:center" colspan="2">Location</th>
+            <th rowspan="2">Salary</th>
+            <th rowspan="2">Posted On</th>
+        </tr>
+        <tr class="jobs-header-row">
+            <th>City</th>
+            <th>Country</th>
+        </tr>
+        <tr class="jobs-data-row">
+            <td>FrontEnd</td>
+            <td>Bengaluru</td>
+            <td>India</td>
+            <td>₹1,20,000</td>
+            <td>23 March 2025</td>
+        </tr>
+        <tr class="jobs-data-row">
+            <td>BackEnd</td>
+            <td>Mumbai</td>
+            <td>India</td>
+            <td>₹1,50,000</td>
+            <td>23 April 2025</td>
+        </tr>
+        <tr class="jobs-data-row">
+            <td>FullStack</td>
+            <td>San fransico</td>
+            <td>USA</td>
+            <td>$60,000</td>
+            <td>23 June 2025</td>
+        </tr>
+        <tr class="jobs-data-row">
+            <td>DataScientist</td>
+            <td style="text-align:center" colspan="2">Remote</td>
+            <td>$80,000</td>
+            <td>23 May 2025</td>
+        </tr>
+    </table>
+
+    <div id="application">
+        <h2>Submit Your Application</h2>
+        <form class="form-group" action="https://formbold.com/s/6lEXN" method="POST" enctype="multipart/form-data">
+            <div class="form-group"><label for="name">Full Name</label><br>
+                <input type="text" name="Full Name" id="name" placeholder="Atsu" required><br>
+            </div>
+            <div class="form-group"> <label for="email">Email ID</label><br>
+                <input type="email" id="email" email="Email ID" placeholder="example@gmail.com" required><br>
+            </div>
+            <div class="form-group"><label for="phone">Phone No</label><br>
+                <input type="tel" id="phone" name="phone" placeholder="+91 639-809-0000" required><br>
+            </div>
+            <div class="form-group"><label for="dob">Date-of-Birth</label><br>
+                <input type="date" id="dob" name="dob" placeholder="Date-of-Birth" required><br>
+            </div>
+            <div class="form-group"><label for="position Applied">Position Applied For</label><br>
+                <select id="position" name="Position Applied" required>
+                    <option value="">Select Position</option>
+                    <option value="frontend developer">FrontEnd Developer</option>
+                    <option value="backend developer">BackEnd Developer</option>
+                    <option value="fullstack developer">Fullstack Developer</option>
+                    <option value="data scientist">Data Scientist</option>
+                </select><br>
+                <div class="form-group"><label for="resume">Upload Resume</label><br>
+                    <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required><br>
+                </div>
+                <div class="form-group"><label for="coverletter">Cover letter</label><br>
+                    <textarea id="coverletter" id="coverletter" name="coverletter" rows="5" required
+                        placeholder="Explain how do you fit for the job"></textarea><br>
+                </div>
+                <div class="form-group"><label for="terms"><input type="checkbox" id="terms" name="checkbox">Accept
+                        the terms & conditions </label></div>
+                <div class="form-group">
+                    <input type="submit" value="Submit">
+                </div><br>
+        </form>
+    </div>
+
+    <div class="footer">
+        <ul id="footer-links">
+            <li>Courses</li>
+            <li>Programs</li>
+            <li>Youtube</li>
+        </ul>
+        <span id="copy-right">©&nbsp;&nbsp;2025&nbsp;&nbsp;Atsu</span>
+    </div>
 </body>
 
 </html>
