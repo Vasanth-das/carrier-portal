@@ -1,5 +1,5 @@
 html {
-    font-size: 16px;
+    font-size: 14px;
     color: #444444;
 }
 
@@ -9,7 +9,7 @@ body {
     font-family: 'Roboto', sans-serif;
     text-align: justify;
     font-size: 1rem;
-    color: #222222;
+    color: #444444;
 }
 
 h1,
@@ -20,6 +20,7 @@ h5,
 h6 {
     font-family: 'Inter', sans-serif;
     font-weight: 500;
+    color: #222222;
 }
 
 h1 {
@@ -48,66 +49,185 @@ h6 {
 
 a {
     text-decoration: none;
-    color: #51a2ff;
+    color: #3b82f6;
 }
 
 a:hover,
 a:focus {
-    color: #1447e6;
+    color: #1d4ed8;
 }
 
-h1 {
-    text-align: center;
+#navbar {
+    padding: 6px;
+    margin: 0;
+}
 
+#logo {
+    display: block;
+}
+
+#logo-with-text {
+    display: none;
 }
 
 #banner {
     object-fit: cover;
+    height: 150px;
     width: 100%;
 }
 
-#grp {
+#about {
+    display: flex;
+    flex-direction:column;
+    padding: 8px;
+    margin: 0 auto;
+    max-width: 500px;
+}
+
+h1 {
+    text-align: center;
+    margin: 12px 0;
+
+}
+
+#description {
+    font-size:1.25rem;
+    
+}
+
+#team{
+    width:100%;
+}
+
+#team-image {
     width: 100%;
     border-radius: 8px;
     object-fit: cover;
 }
 
-#navbar {
-    padding: 0px;   
+#jobs{
+    display:block;
 }
+
+#jobs-table{
+    display:none;
+}
+
+
+h2 {
+    text-align: center;
+    margin-top:0;
+}
+
+@media screen and (min-width:576px) {
+    html {
+        font-size: 16px;
+    }
+
+    #logo-with-text {
+        display: block;
+    }
+
+    #logo {
+        display: none;
+    }
+
+    #banner {
+        height: 200px;
+        object-fit: cover;
+
+    }
+
+    h1 {
+        margin: 16px 0;
+
+    }
+
+    #jobs {
+    margin: 0 auto;
+    padding: 0 8px;
+    max-width: 500px;
+}
+
+
+
+}
+
+/*this layout for the small devices */
+
+@media screen and (min-widt:768px) {
+    #banner {
+        height: 250px;
+    }
+    h1{
+        margin:20px 0;
+    }
+    #about{
+        max-width:800px;
+        flex-direction:row;
+    }
+    #description {
+    width: 50%;
+    padding-right:8px;
+    }
+    #team{
+        width:50%;
+    }
+    #jobs{
+        min-width:800px;
+    }
+    #jobs-list{
+        display:none;
+    }
+   #jobs-table{
+    display:block;
+   } 
+
+}
+
+/*this is for medium tablets*/
+
+@media screen and (min-width:992px) {
+    html {
+        font-size: 20px;
+    }
+
+    #banner {
+        height: 300px;
+    }
+}
+
+/*this is for large devices*/
+
+@media screen and (min-width:1200px) {
+    html {
+        font-size: 23px;
+    }
+}
+
+/*this is for desktop devices*/
+
+/* 
+
+
+
+
+
+
+
+
 
 #logo {
     width: 58px;
     height: 58px;
 }
 
-#about {
-    display: flex;
-    padding: 2px;
-    margin: 0 auto;
-    max-width: 750px;
-}
 
-#description {
-    width: 50%;
-    margin: 20px;
-}
 
-#team {
-    width: 50%;
-    margin: 20px;
 
-}
 
-h2 {
-    text-align: center;
-}
 
-#jobs {
-    margin: 0 auto;
-    padding: 0 8px;
-    max-width: 800px;
-}
+
 
 .footer {
     background-color: #f3f4f6;
@@ -190,3 +310,4 @@ textarea {
     font-weight: 500;
     cursor: pointer;
 }
+    */
